@@ -16,3 +16,9 @@ mainEl.style.backgroundColor = 'var(--main-bg)';
 // Set the content of mainElto <h1>SEI Rocks!</h1>.
 
 mainEl.innerHTML = '<h1>SEI Rocks!</h1>';
+
+// Task 1.3
+// Add a class of flex-ctrto mainEl.
+
+mainEl.classList.add('flex-ctrto');
+console.log(mainEl);
