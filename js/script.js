@@ -21,7 +21,7 @@ console.log(mainEl);
 mainEl.style.backgroundColor = 'var(--main-bg)';
 
 // Task 1.2
-// Set the content of mainElto <h1>SEI Rocks!</h1>.
+// Set the content of mainEl to <h1>SEI Rocks!</h1>.
 
 mainEl.innerHTML = '<h1>SEI Rocks!</h1>';
 
@@ -55,7 +55,7 @@ topMenuEl.style.backgroundColor = 'var(--top-menu-bg)';
 //Add a class of flex-around to topMenuEl.
 
 topMenuEl.classList.add('flex-around');
-console.log(topMenuEl);
+
 
 //Task 3.0
 //Copy the following data structure to the top of script.js:
@@ -75,7 +75,13 @@ of the text property of the "link" object.
 Append the new element to the topMenuEl element.
 */
 
-menuLinks.forEach(function(mL){
-    mL.createElement('a').setAttribute('href', '')
+menuLinks.forEach(function(ml){
+    var elem = document.createElement('a');
+    elem.setAttribute('href', ml.href);
+    var text = document.createTextNode(ml.text);
+    elem.appendChild(text);
+    topMenuEl.appendChild(elem);
+    console.log(ml);
 });
 
+//.setAttribute('href', ml.href);
