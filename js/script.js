@@ -1,3 +1,11 @@
+// Menu data structure
+var menuLinks = [
+    {text: 'about', href: '/about'},
+    {text: 'catalog', href: '/catalog'},
+    {text: 'orders', href: '/orders'},
+    {text: 'account', href: '/account'},
+  ];
+
 // Task 1.0
 // Select and cache the <main>element in a variable named mainEl.
 
@@ -48,4 +56,26 @@ topMenuEl.style.backgroundColor = 'var(--top-menu-bg)';
 
 topMenuEl.classList.add('flex-around');
 console.log(topMenuEl);
+
+//Task 3.0
+//Copy the following data structure to the top of script.js:
+
+/*
+Task 3.1
+Iterate over the entire menuLinks array and for each "link" object:
+
+Create an <a>element.
+
+On the new element, add an href attribute with its value 
+set to the href property of the "link" object.
+
+Set the new element's content to the value 
+of the text property of the "link" object.
+
+Append the new element to the topMenuEl element.
+*/
+
+menuLinks.forEach(function(mL){
+    mL.createElement('a').setAttribute('href', '')
+});
 
