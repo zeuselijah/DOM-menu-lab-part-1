@@ -1,5 +1,5 @@
 // Menu data structure
-var menuLinks = [
+const menuLinks = [
     {text: 'about', href: '/about'},
     {text: 'catalog', href: '/catalog'},
     {text: 'orders', href: '/orders'},
@@ -10,7 +10,7 @@ var menuLinks = [
 // Select and cache the <main>element in a variable named mainEl.
 
 const mainEl = document.querySelector('main');
-console.log(mainEl);
+// console.log(mainEl);
 
 //Task 1.1
 //Set the background color of mainEl
@@ -26,7 +26,7 @@ mainEl.style.backgroundColor = 'var(--main-bg)';
 mainEl.innerHTML = '<h1>SEI Rocks!</h1>';
 
 // Task 1.3
-// Add a class of flex-ctrto mainEl.
+// Add a class of flex-ctr to mainEl.
 
 mainEl.classList.add('flex-ctr');
 console.log(mainEl);
@@ -76,12 +76,15 @@ Append the new element to the topMenuEl element.
 */
 
 menuLinks.forEach(function(ml){
-    var elem = document.createElement('a');
+    const elem = document.createElement('a');
     elem.setAttribute('href', ml.href);
-    var text = document.createTextNode(ml.text);
-    elem.appendChild(text);
-    topMenuEl.appendChild(elem);
-    console.log(ml);
+    elem.textContent = ml.text;
+    topMenuEl.append(elem);
+    
+    // Just another way to do it
+    // var text = document.createTextNode(ml.text);
+    // elem.appendChild(text);
+    // topMenuEl.appendChild(elem);
+    // console.log(ml);
 });
 
-//.setAttribute('href', ml.href);
