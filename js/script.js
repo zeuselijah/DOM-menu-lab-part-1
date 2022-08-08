@@ -80,7 +80,7 @@ menuLinks.forEach(function(ml){
     elem.setAttribute('href', ml.href);
     elem.textContent = ml.text;
     topMenuEl.append(elem);
-    
+
     // Just another way to do it
     // var text = document.createTextNode(ml.text);
     // elem.appendChild(text);
@@ -88,3 +88,5 @@ menuLinks.forEach(function(ml){
     // console.log(ml);
 });
 
+// Task 4.0
+// Select and cache the <nav id="sub-menu">element in a variable named subMenuEl.
