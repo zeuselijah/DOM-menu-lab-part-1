@@ -159,3 +159,31 @@ const subMenu = false;
 
 console.log(topMenuLinks);
 console.log(subMenu);
+
+
+// Task 5.2
+// Attach a delegated 'click' event listener to topMenuEl.
+
+// The first line of code of the event listener function should 
+// call the event object's preventDefault()method.
+
+// The second line of code function should immediately return 
+// if the element clicked was not an <a> element.
+
+// console.log the content of the <a> to verify the handler is working.
+
+function handleTopMenuEl(event){
+ topMenuEl.addEventListener('click', 'a');
+ event.preventDefault();
+ return false; if(topMenuEl !== 'click'){
+ }else return true;
+ console.log(handleTopMenuEl);
+}
+
+/*
+ topMenuEl.addEventListener('click', handleButtonPress);
+ handleButtonPress.preventDefault();
+ return if(elem !== 'click'){
+
+ }
+*/ 
