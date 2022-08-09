@@ -92,7 +92,6 @@ menuLinks.forEach(function(ml){
 // Select and cache the <nav id="sub-menu">element in a variable named subMenuEl.
 
 const subMenuEl = document.getElementById('sub-menu');
-console.log(subMenuEl);
 
 // Task 4.1
 // Set the height subMenuElelement to be 100%.
@@ -110,5 +109,18 @@ subMenuEl.style.background = 'var(--sub-menu-bg)';
 // Add the class of flex-around to the subMenuElelement.
 
 subMenuEl.classList.add('flex-around');
+
+
+// Task 4.4
+// Set the CSS position property of subMenuEl to the value of absolute.
+
+subMenuEl.style.position = 'absolute';
+
+
+// Task 4.5
+// Set the CSS top property of subMenuEl to the value of 0.
+
+subMenuEl.style.top = '0';
+console.log(subMenuEl);
 
 
