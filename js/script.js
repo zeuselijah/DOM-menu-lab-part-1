@@ -1,10 +1,33 @@
 // Menu data structure
 const menuLinks = [
-    {text: 'about', href: '/about'},
-    {text: 'catalog', href: '/catalog'},
-    {text: 'orders', href: '/orders'},
-    {text: 'account', href: '/account'},
-  ];
+  { text: "about", href: "/about" },
+  {
+    text: "catalog",
+    href: "#",
+    subLinks: [
+      { text: "all", href: "/catalog/all" },
+      { text: "top selling", href: "/catalog/top" },
+      { text: "search", href: "/catalog/search" },
+    ],
+  },
+  {
+    text: "orders",
+    href: "#",
+    subLinks: [
+      { text: "new", href: "/orders/new" },
+      { text: "pending", href: "/orders/pending" },
+      { text: "history", href: "/orders/history" },
+    ],
+  },
+  {
+    text: "account",
+    href: "#",
+    subLinks: [
+      { text: "profile", href: "/account/profile" },
+      { text: "sign out", href: "/account/signout" },
+    ],
+  },
+]
 
 // Task 1.0
 // Select and cache the <main>element in a variable named mainEl.
@@ -124,3 +147,15 @@ subMenuEl.style.top = '0';
 console.log(subMenuEl);
 
 
+// Task 5.1
+// Select and cache the all of the <a>elements inside of topMenuEl 
+// in a variable named topMenuLinks.
+
+// Declare a global showing SubMenu variable and initialize it to false;
+
+const topMenuLinks = document.querySelectorAll('a');
+
+const subMenu = false;
+
+console.log(topMenuLinks);
+console.log(subMenu);
