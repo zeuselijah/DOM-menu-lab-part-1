@@ -90,3 +90,6 @@ menuLinks.forEach(function(ml){
 
 // Task 4.0
 // Select and cache the <nav id="sub-menu">element in a variable named subMenuEl.
+
+const subMenuEl = document.getElementById('sub-menu');
+console.log(subMenuEl);
