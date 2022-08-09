@@ -93,3 +93,22 @@ menuLinks.forEach(function(ml){
 
 const subMenuEl = document.getElementById('sub-menu');
 console.log(subMenuEl);
+
+// Task 4.1
+// Set the height subMenuElelement to be 100%.
+
+subMenuEl.style.height = "100%";
+
+// Task 4.2
+// Set the background color of subMenuEl
+// to the value stored in the --sub-menu-bgCSS custom property.
+
+subMenuEl.style.background = 'var(--sub-menu-bg)';
+
+
+// Task 4.3
+// Add the class of flex-around to the subMenuElelement.
+
+subMenuEl.classList.add('flex-around');
+
+
